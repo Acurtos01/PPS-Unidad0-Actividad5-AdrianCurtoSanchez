@@ -17,36 +17,49 @@ Uso de Git (III)
 
 ---
 
-Tercera y última actividad en la que trabajamos con Git.
-
-En esta ocasión vamos a trabajar de manera colaborativa.
-
-El producto a realizar será la creación un repositorio (con nombre PPSUnidad0Actividad5TuNombre) en la [plataforma de GitHub](https://github.com/)  que contenga un proyecto php por el cual podemos visualizar una foto y descripción de los diferentes usuarios, junto con los archivos de documentación de todo el proceso realizado (en formato .md) y el resto de archivos necesarios, imágenes, etc...
-
-Una vez documentado todo el proceso en tu README.md, en la entrega por la plataforma, pega el enlace a tu repositorio de github.com y adjunta la carpeta de tu repositorio comprimida.
-
 ### Creación del repositorio
 
 En esta ocasión vamos a crear nuestro proyecto a partir de otro proyecto ya existente.
 
-Crea tu proyecto en tu dispositivo local puedes hacerlo clonando [este repositorio](https://github.com/jmmedinac03vjp/PPS-Unidad0Actividad5-JoseMi) (__Recuerda que para tu proyecto se deberá crear una carpeta en tu equipo con nombre PPS-ActividadUnidad0-TuNombre o sea que la sintaxis de git clone deberá ser un poco más compleja que el nombre del repositorio__) o bien crea tu repositorio desde cero y vas creando y copiando las carpetas y archivos necesarias.
+Clonamos el repositorio en nuestro equipo con el comando `git clone git@github.com:Acurtos01/PPS-Unidad0-Actividad6-Docker-AdrianCurtoSanchez.git`.
 
-> Recuerda  cómo creamos el repositorio desde la línea de comandos:
-~~~
-echo "# PPS-Unidad0Actividad5-JoseMi" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
+![Git clone](imagenes/git-clone.png)
+
+Modificamos el nombre de la carpeta de nuestro proyecto con el comando `mv PPS-Unidad0Actividad5-JoseMi PPS-Unidad0-Actividad5-AdrianCurtoSanchez`.
+
+![Rename proyect folder](imagenes/rename-proyect.png)
+
+
+
+### Configurando repositorio remoto
+
+> Con `git remote -v` podemos ver los repositorios remotos que tenemos configurados.
+
+![Git remote version](imagenes/git-remote-v-1.png)
+
+> Con `git remote rm origin` podemos eliminar los repositorios remotos que tenemos configurados.
+
+![Git remote remove origin](imagenes/git-remote-rm-origin.png)
+
+Configuramos el repositorio remoto que acabamos de crear con los siguientes comandos:
+
+```
+git remote add origin git@github.com:Acurtos01/PPS-Unidad0-Actividad5-AdrianCurtoSanchez.git
 git branch -M main
-git remote add origin git@github.com:jmmedinac03vjp/PPS-Unidad0Actividad5-JoseMi.git
 git push -u origin main
-~~~
+``` 
 
-### Viendo los remotos
+![Config new repository](imagenes/config-new-repository.png)
 
-> Con ``git remote -v`` podemos ver los repositorios remotos que tenemos configurados.
+Con el nuevo repositorio configurado podemos crear nuestro commit y realizar push de los cambio al repositorio remoto.
 
-1. Mirá tus remotos.
+```
+git commit -am "Creación del proyecto y cambio de repositorio"
+
+git push
+```
+
+
 
 ### Visualizando la página web
 
