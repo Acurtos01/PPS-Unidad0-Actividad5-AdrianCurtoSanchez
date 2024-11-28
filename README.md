@@ -3,17 +3,15 @@ Uso de Git (III)
 ===============
 ![](imagenes/excelencia.jpeg)
 
-[Creación del repositorio](#Creación-del-repositorio)
+[Creación del repositorio](#creación-del-repositorio)
 
-[Viendo los remotos](#Viendo-los-remotos)
+[Configurando repositorio remoto](#configurando-repositorio-remoto)
 
-[Visualizando la página web](#Visualizando-la-página-web)
+[Visualizando la página web](#visualizando-la-página-web)
 
-[Colaborando](#Colaborando)
+[Colaborando](#colaborando)
 
-[Git logs](#Erre-que-erre-con-Git-Logs)
-
-[Entrega](#Entrega)
+[Git logs](#git-logs)
 
 ---
 
@@ -51,7 +49,7 @@ git push -u origin main
 
 ![Config new repository](imagenes/config-new-repository.png)
 
-Con el nuevo repositorio configurado podemos crear nuestro commit y realizar push de los cambio al repositorio remoto.
+Con el nuevo repositorio configurado podemos crear nuestro commit y realizar push de los cambios al repositorio remoto.
 
 ```
 git commit -am "Creación del proyecto y cambio de repositorio"
@@ -59,14 +57,23 @@ git commit -am "Creación del proyecto y cambio de repositorio"
 git push
 ```
 
-
-
 ### Visualizando la página web
 
-1. Visualiza con php el contenido de la página web( ``php -S 0:8080``).
-2. Introduce dentro de la carpeta img una imagen de tu foto o avatar. El nombre del archivo debe de llevar como nombre tu nombre. 
-3. Dentro de la carpeta profile crea un archivo html con el mismo nombre del archivo de la imagen que copiaste en el punto anterior.
-4. Lanza el comando php para que se muestre el contenido de la página web y ver cómo se ha modificado.
+Con el comando `php -S 0:8080` ejecutamos el servidor PHP encargado  de mostrar el contenido de index.php.
+
+![First view web](imagenes/first-view-web.png)
+
+En la carpeta img introducimos una imagen de nuestro avatar cuyo nombre del archivo lleva nuestro nombre, en mi caso "AdrianCurto". 
+
+![Added avatar](imagenes/added-avatar.png)
+
+En la carpeta profile creamos un archivo html con el mismo nombre del archivo de la imagen de avatar del punto anterior.
+
+![Added profile](imagenes/added-profile.png)
+
+Tras haber añadido la imagen y creado el fichero HTML refrescamos la página web en el navegador y veremos nuestro avatar y al pinchar sobre nuestro nombre visualizaremos el contenido de nuestro HTML.
+
+![Web view](imagenes/second-view-web.png)
 
 ### Colaborando
 
@@ -96,7 +103,7 @@ git push
 1. Comprueba que tus compañeros hayan creado sus ramas en tu repositorio (``git branch``). Si no es así...!!!! échales una mano, hombre¡¡¡¡¡
 1. Comprueba con ``git diff`` las diferencias existentes entre las ramas Main y las de tus compañeros
 
-### Erre que erre con Git Logs
+### Git Logs
 
 >Repasemos git logs
 
@@ -105,14 +112,3 @@ git push
 1. Muestra los logs utilizando el modificador ``--pretty``
 1. Muestra los logs de los últimos 2 commits donde se vean las diferencias de cada una de las entradas.
 1. Muestra los logs de las modificaciones realizadas en el último día
-
-
-### Entrega
-
-> Intenta coordinarte con tus compañeros y, a ser posible, realiza la entrega una vez que ellos hayan hecho las modificaciones oportunas en tu repositorio.
-> Una vez documentado todo el proceso en tu README.md, en la entrega por la plataforma tendrás que entregar por duplicado:
-> + En la sección de ___Texto en línea___, pega el __enlace__ a tu repositorio de github.com
-> + En la sección de ___Archivos adjuntos___, envía __comprimida la carpeta local de tu repositorio__.
-
-![Puedes verlo aquí](imagenes/Entrega.png)
-
