@@ -77,9 +77,16 @@ Tras haber añadido la imagen y creado el fichero HTML refrescamos la página we
 
 ### Colaborando
 
-> Podemos añadir colaboradores en nuestro proyecto desde la ___Configuración___ del Repositorio, apartado ___Collaborators___. Éstos podrán realizar cambios en él. 
+> Añadimos un par de colaboradores a nuestro proyecto, para ello accedemos a nuestro repositorio en GitHub y en las opciones superiores nos dirigimos a Settings, una vez dentro en el menú de la inzquierda seleccionamos Collaborators.
 
-![Aquí se muestra la configuración de colaboradores](imagenes/colaboradores.png)
+![GitHub collaborators](imagenes/github-collaborators.png)
+
+Una vez hayamos agregado colaboradores se verá algomo como la siguiente imagen.
+
+![GitHub collaborators added](imagenes/github-collaborators-added.png)
+
+
+
 
 1. Comparte tu proyecto con al menos dos compañeros.
 1. Para cada uno de los proyectos  de tus compañeros:
